@@ -1,8 +1,10 @@
 def time_converter(minutes):
-    # Any time strictly less than two hours will be modelled indivually
-    # because it is an edge case
-    if minutes < 60:
-        print(f"{minutes} minutes")
+    if minutes == 0:
+        print(f"0 hours, {minutes} minutes")
+    elif minutes == 1:
+        print(f"0 hours, {minutes} minute")
+    elif minutes < 60:
+        print(f"0 hours, {minutes} minutes")
     elif minutes == 60:
         print("1 hour")
     elif minutes == 61:
