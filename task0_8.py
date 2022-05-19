@@ -6,7 +6,7 @@ def time_converter(minutes):
     elif minutes < 60:
         print(f"0 hours, {minutes} minutes")
     elif minutes == 60:
-        print("1 hour")
+        print("1 hour, 0 minutes")
     elif minutes == 61:
         print("1 hour, 1 minute")
     elif minutes > 60 and minutes < 120:
@@ -14,7 +14,7 @@ def time_converter(minutes):
         print(f"1 hour, {minutes_converter} minutes")
     elif minutes % 60 == 0 and minutes > 60:
         hours = int(minutes / 60)
-        print(f"{hours} hours")
+        print(f"{hours} hours, 0 minutes")
     elif ((minutes % 60) - 1 == 0) and minutes > 60:
         hours = int((minutes - 1) / 60)
         print(f"{hours} hours, 1 minute")
