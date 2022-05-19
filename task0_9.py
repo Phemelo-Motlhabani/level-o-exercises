@@ -1,12 +1,15 @@
 def print_vowels(string_input):
-    vowels = set()
+    vowels = list()
     for vowel in string_input:
         if(vowel == "a" or vowel == "e" or vowel == "i" or vowel == "o"):
-            vowels.add(vowel)
+            vowels.append(vowel)
         elif(vowel == "A" or vowel == "E" or vowel == "I" or vowel == "O"):
-            vowels.add(vowel.lower())
+            vowels.append(vowel.lower())
         elif vowel == "u":
-            vowels.add(vowel)
+            vowels.append(vowel)
         elif vowel == "U":
-            vowels.add(vowel.lower())
-    print(f"Vowels: {vowels}", sep=",")
+            vowels.append(vowel.lower())
+    vowel_string = ""
+    for vowel in vowels:
+        vowels_string += vowel + ","
+    print(f"Vowels: {vowels_string}")
