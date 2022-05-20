@@ -22,3 +22,7 @@ def time_converter(minutes):
         hours = minutes // 60
         minutes_converter = minutes - (hours * 60)
         print(f"{hours} hours, {minutes_converter} minutes")
+
+
+time_converter(71)
+time_converter(133)
