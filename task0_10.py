@@ -7,7 +7,7 @@ def common_characters(string_1, string_2):
             common_letters += letter
         else:
             continue
-    sep = ","
+    sep = ", "
     print(f"Vowels: {sep.join(common_letters)}")
 
 
