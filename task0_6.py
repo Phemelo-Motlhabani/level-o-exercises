@@ -7,5 +7,5 @@ def maximum(int_1, int_2, int_3):
         return int_3
 
 
-max_num = maximum(1, 2, 3)
+max_num = maximum(1, 5, 3)
 print(max_num)
