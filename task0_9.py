@@ -11,7 +11,7 @@ def print_vowels(string_input):
             pass
         else:
             vowels_string += vowel
-    sep = ","
+    sep = ", "
     print(f"Vowels: {sep.join(vowels_string)}")
 
 
