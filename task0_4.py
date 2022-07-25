@@ -3,3 +3,7 @@ def even_or_odd(number):
         print("even")
     else:
         print("odd")
+
+
+even_or_odd(2)
+even_or_odd(3)
