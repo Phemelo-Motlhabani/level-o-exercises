@@ -1,4 +1,4 @@
-def time_converter(minutes):
+def time_converter(minutes: int):
     if minutes == 0:
         print(f"0 hours, {minutes} minutes")
     elif minutes == 1:
