@@ -1,11 +1,10 @@
-def maximum(int_1, int_2, int_3):
-    if int_1 >= int_2 and int_1 >= int_3:
-        return int_1
-    elif int_2 >= int_3:
-        return int_2
-    else:
-        return int_3
+def maximum(*numbers):
+    max_number = 0
+    for number in numbers:
+        if number > max_number:
+            max_number = number
+    return max_number
 
 
-max_num = maximum(9, 2, 7)
+max_num = maximum(9, 2, 12, 36, 36, 17, 13, 55, 45, 8, 42, 31, 28, 2, 8)
 print(max_num)
